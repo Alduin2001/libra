@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+
+    background-image: url(https://img.freepik.com/premium-vector/seamless-pattern-with-night-sky-stars-space-seamless-background_266639-1832.jpg);
+}

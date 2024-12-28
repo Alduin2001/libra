@@ -1,0 +1,1 @@
+{"version":3,"file":"jwt.strategy.js","sourceRoot":"","sources":["../../src/guard-jwt/jwt.strategy.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAA4C;AAC5C,+CAAoD;AACpD,+CAAoC;AAG7B,IAAM,WAAW,GAAjB,MAAM,WAAY,SAAQ,IAAA,2BAAgB,EAAC,sBAAQ,CAAC;CAE1D,CAAA;AAFY,kCAAW;sBAAX,WAAW;IADvB,IAAA,mBAAU,GAAE;GACA,WAAW,CAEvB"}

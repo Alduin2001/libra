@@ -1,0 +1,101 @@
+/* Общие стили */
+
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  
+  /* Контактная информация */
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+
+  .contact-info, .feedback-form {
+    flex: 1 1 45%;
+    background-color: #f0f5ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .contact-info h2, .feedback-form h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #0056b3;
+  }
+  
+  /* Форма обратной связи */
+  .feedback-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .feedback-form input, .feedback-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .feedback-form input:focus, .feedback-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .feedback-form button {
+    padding: 10px 20px;
+    background-color: #5a5a5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #303030;
+  }
+  
+  /* Медиа-запросы для адаптивности */
+  @media (max-width: 768px) {
+    .contacts {
+      flex-direction: column;
+    }
+  
+    .contact-info, .feedback-form {
+      flex: 1 1 100%;
+    }
+  }

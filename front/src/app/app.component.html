@@ -1,0 +1,32 @@
+<main class="flex justify-center flex-col text-white flex_main">
+  <header class="header">
+    <h1 class="flex justify-center text-2xl logo">БиБлИоТ$Ka</h1>
+  </header>
+  <menu class="routes p-2 relative">
+
+    <ul class="relative">
+      <li><button class="p-2 bg-orange-500 rounded-md dropdown-button hover:bg-orange-600 drop-shadow-md transition-all" (click)="toggleDropMain()">Главная</button></li>
+      <div class="dropdown-menu bg-gray-500 absolute left-2 w-full" [class.show]="isDropOpenMain">
+        <li class="hover:bg-gray-700 transition-all p-2"><a routerLink="">Главная</a></li>
+        <li class="hover:bg-gray-700 transition-all p-2"><a routerLink="about">О нас</a></li>
+        <li class="hover:bg-gray-700 transition-all p-2"><a routerLink="contact">Контакты</a></li>
+      </div>
+    </ul>
+    <ul class="relative">
+      <li><button class="p-2 bg-orange-500 rounded-md dropdown-button hover:bg-orange-600 drop-shadow-md transition-all" (click)="toggleDropAuth()">Аутентификация</button></li>
+      <div class="dropdown-menu bg-gray-500 absolute left-2 w-full" [class.show]="isDropOpenAuth">
+        <li class="hover:bg-gray-700 transition-all p-2"><a routerLink="register">Регистрация</a></li>
+        <li class="hover:bg-gray-700 transition-all p-2"><a routerLink="auth">Авторизация</a></li>
+      </div>
+    </ul>
+    <ul class="relative">
+      <li><button class="p-2 bg-orange-500 rounded-md dropdown-button hover:bg-orange-600 drop-shadow-md transition-all" (click)="toggleDropCabinet()">Личный кабинет</button></li>
+      <div class="dropdown-menu bg-gray-500 absolute left-2 w-full" [class.show]="isDropOpenCabinet">
+        <li class="hover:bg-gray-700 transition-all p-2"><a routerLink="profile">Профиль</a></li>
+      </div>
+    </ul>
+  </menu>
+  <router-outlet></router-outlet>
+</main>
+
+<router-outlet />

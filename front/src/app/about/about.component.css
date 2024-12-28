@@ -1,0 +1,168 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Шапка */
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    color: white;
+  }
+  
+  .header p {
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* Секции "О нас" */
+  .about-section {
+    margin-bottom: 40px;
+  }
+  
+  .about-section h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  .image-gallery {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Секция "Отзывы" */
+  .reviews-section {
+    margin-bottom: 40px;
+  }
+  
+  .reviews-section h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .reviews {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .review {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f0f5ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .review .author {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  /* Форма для отзывов */
+  .feedback-form {
+    margin-top: 40px;
+  }
+  
+  .feedback-form h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .feedback-form input, .feedback-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .feedback-form input:focus, .feedback-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .feedback-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Медиа-запросы для адаптивности */
+  @media (max-width: 768px) {
+    .review {
+      flex: 1 1 100%;
+    }
+  
+    .image-gallery img {
+      max-width: 100%;
+    }
+  }

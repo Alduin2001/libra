@@ -1,0 +1,41 @@
+.header{
+
+    width: 700px;
+    height: 60px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.routes{
+    width: 700px;
+    height: 20;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 20px;
+}
+.routes .dropdown-button::after{
+    content: '↓';
+}
+.dropdown-menu{
+    display:none;
+    transition: .7s;
+}
+.dropdown-menu.show{
+    display:block;
+}
+.logo{
+    font-weight: 700;
+}
+
+.flex_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

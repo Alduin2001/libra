@@ -1,0 +1,36 @@
+<section class="w-3/5 mx-auto p-2 bg-white mt-2 rounded-lg">
+    <h1>Профиль</h1>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="w-full p-2">
+        <div>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" formControlName="name" class="outline-none border-b-2 border-purple-600 w-full"/>
+            @if(profileForm.get('name')){
+                <div class="text-red-500 italic mt-2">
+                    * Имя должно быть заполнено
+                </div>
+            }
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" formControlName="email" class="outline-none border-b-2 border-purple-600 w-full"/>
+            @if(profileForm.get('email')){
+                <div class="text-red-500 italic mt-2">
+                    * Некорректный формат почты
+                </div>
+            }
+        </div>
+        <div>
+            <label for="password">Пароль:</label>
+            <input type="text" id="password" formControlName="password" class="outline-none border-b-2 border-purple-600 w-full"/>
+            @if(profileForm.get('password')){
+                <div class="text-red-500 italic mt-2">
+                    * Пароль должен быть заполненым и иметь минимум 6 символов
+                </div>
+            }
+        </div>
+        <div class="grid gap-2 xs:grid-cols-1 md:grid-cols-2 text-white mt-2">
+            <input type="submit" value="Поменять" class="w-full p-2 bg-cyan-600 rounded-md cursor-pointer"/>
+            <input type="button" value="Удалить профиль" class="w-full p-2 bg-red-500 rounded-md cursor-pointer"/>
+        </div>
+    </form>
+</section>
